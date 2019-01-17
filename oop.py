@@ -29,10 +29,10 @@ aminux = Person('Amin', 'aminux@gmail.com')
 # aminux.set_name('Mohamed Amin')
 # aminux.set_email("Aminux@gmail.com")
 
-print(aminux.get_name())
-print(aminux.get_email())
+aminux.get_name()
+aminux.get_email()
 
-print(aminux.tostring())
+aminux.tostring()
 
 
 # Create new Customer class to extend person
@@ -57,8 +57,51 @@ class Customer(Person):
 
 Abdihalim = Customer('Abdihalim', 'abdihalim@gmail.com', 100)
 
-print(Abdihalim.customer_info())
+Abdihalim.customer_info()
 
+
+''' How Multiple classes interact each other '''
+#Robots class
+class Robots:
+    def __init__(self,name,color,weight):
+        self.name = name
+        self.color = color
+        self.weight = weight
+    def introduce(self):
+        print("I'm {} my color is {} and my weight is {}".format(self.name,self.color,self.weight))
+
+GA = Robots("GA","Blue",45)
+Siri = Robots("Siri","green",56)
+# GA.introduce()
+# Siri.introduce()
+
+#Company class
+
+class Company:
+    def __init__(self,name,type,isOpensource):
+        self.name = name
+        self.type = type
+        self.isOpensource = isOpensource
+        # self.robotOwned = robotOwned
+    
+
+# init company
+
+Apple = Company("Apple","Computer Manufacturer",False)
+Google = Company("Google","Internet",True)
+
+Apple.robotOwned = Siri
+Apple.robotOwned.introduce()
+
+
+def test(c,e,d):
+    return c > e+d 
+    # if c > e + d:
+    #     return True
+    # else:
+    #     return False
+
+test(5,4,0)
 
 
 

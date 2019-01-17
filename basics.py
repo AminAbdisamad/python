@@ -1,26 +1,26 @@
 # 1. Variables
-# a = 10
-# b = 3
+a = 10
+b = 3
 
-# print(a + b)  # 13
-# print(a - b)  # 7
-# print(a * b)  # 30
-# print(a / b)  # 3.3333333333333335 / symbol returns float by default
-# print(a // b)  # 3 When you use // it returns int value
-# print(a % b)  # 1
-# print(a > b)  # true
-# print(a < b)   # false
-# print(a <= b)  # false
-# print(a >= b)  # true
-# print(a == b)  # false
+print(a + b)  # 13
+print(a - b)  # 7
+print(a * b)  # 30
+print(a / b)  # 3.3333333333333335 / symbol returns float by default
+print(a // b)  # 3 When you use // it returns int value
+print(a % b)  # 1
+print(a > b)  # true
+print(a < b)   # false
+print(a <= b)  # false
+print(a >= b)  # true
+print(a == b)  # false
 
 # loops
 # for i in range(b, a):
 #     print(i)
 
-# message = "Hi, Aminux How are you doing"
-# print(message[4:10])
-# print(message[-20:-5])
+message = "Hi, Aminux How are you doing"
+print(message[4:10])
+print(message[-20:-5])
 
 # A program for a party
 # print("Hi, Welcome to our party, you can enjoy if you're older than 15 years")
