@@ -38,3 +38,6 @@ def commonNumbers():
         if i in b:
             value.append(i)
     return(list(set(value)))
+
+
+print(commonNumbers())

@@ -14,6 +14,7 @@ class Employee:
         self._pay = pay
         self._company = company
         self._numOfEmpl += 1
+
     # Property Decorator :- getter
 
     @property
@@ -76,6 +77,7 @@ emp3_str = "Farah-Amin-6000-Google"
 emp2 = Employee.stringArranger(emp2_str)
 myDate = datetime.date(2019, 1, 13)
 emp2.fullName = "Geedi Muran"
+
 if __name__ == "__main__":
     # print(emp1.info())
     # print(emp1.isWorkday(myDate))
@@ -86,3 +88,6 @@ if __name__ == "__main__":
     print(emp2.email)
     del emp2.fullName
     print(emp2.fullName)
+
+    # print(em)
+    # # print()
