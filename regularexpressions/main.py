@@ -23,8 +23,9 @@ Mr. T '''
 
 text = 'You\'ll know you\'re strong when the only option you have is to be strong'
 # compiles regular expression and returns object
-pattern = re.compile(r'^')
-matchs = pattern.finditer(textToSearch)
+pattern = re.compile(r'^You')
+# matchs = pattern.finditer(textToSearch)
+matchs = pattern.finditer(text)
 for match in matchs:
     print(match.group(0))
 
